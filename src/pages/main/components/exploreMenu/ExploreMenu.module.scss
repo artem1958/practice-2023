@@ -1,0 +1,379 @@
+@import "src/styles/variables";
+
+.exploreMenu {
+  background: linear-gradient(
+    173.34deg,
+    #ffffff 0%,
+    #ffffff 0%,
+    rgba(243, 244, 245, 0.2) 11.74%,
+    #f3f4f5 27.92%,
+    rgba(243, 244, 245, 0) 44.79%,
+    rgba(243, 244, 245, 0.68) 60.42%,
+    #f3f4f5 79.17%,
+    #ffffff 100%
+  );
+}
+
+.centered {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.layout {
+  padding: 105px 125px;
+}
+
+.mainTitle {
+  margin: 0;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.foodCard {
+  width: 287px;
+  height: 378px;
+  border-radius: 16px;
+  background: linear-gradient(
+    152.09deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0px 21px 42px 0px #a3a8b226;
+  position: relative;
+
+  &Layout {
+    padding: 28px 26px;
+    height: 100%;
+  }
+
+  &Title {
+    margin: 0;
+    font-family: Jost;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &Desc {
+    margin: 6px 0 0 0;
+    font-family: Jost;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #64646a;
+  }
+  &Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 112px;
+      height: 105px;
+    }
+    button {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 121px;
+      height: 42px;
+    }
+  }
+}
+
+.foodCards {
+  margin-top: 129px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 18px;
+}
+
+.orderFood {
+  margin-top: 133px;
+  display: flex;
+  img {
+    width: 61%;
+  }
+  &Description {
+    margin-top: 54px;
+    p {
+      margin: 0;
+      font-size: 45px;
+      font-weight: 800;
+      line-height: 49px;
+      letter-spacing: 0em;
+    }
+    button {
+      width: 119px;
+      height: 49px;
+      margin-top: 42px;
+    }
+  }
+}
+
+.ourCoffe {
+  margin-top: 27px;
+  &Title {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  &Cards {
+    margin-top: 183px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.coffeCard {
+  position: relative;
+  width: 278px;
+  height: 330px;
+  box-shadow: 0px 14px 42px 0px #a3a8b226;
+  &Image {
+    position: absolute;
+    width: 130px;
+    height: 213px;
+    top: -55px;
+    left: 0;
+  }
+  &Description {
+    display: flex;
+    justify-content: end;
+    &Wrapper {
+      width: 52%;
+    }
+    &Title {
+      margin: 0;
+      margin-top: 6px;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 31px;
+      letter-spacing: 0em;
+    }
+    &Meta {
+      margin: 0;
+      margin-top: 29px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      color: #64646a;
+    }
+  }
+  &OrderPanel {
+    margin-top: 147px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 221px;
+    &Cost {
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 20px;
+      &:after {
+        content: "\20BD";
+      }
+    }
+    button {
+      width: 105px;
+      height: 42px;
+    }
+  }
+}
+
+.downloadApp {
+  margin-top: 76px;
+  width: 358px;
+  &Title {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 49px;
+  }
+  button {
+    width: 248px;
+    height: 49px;
+    margin-top: 42px;
+  }
+}
+
+.footer {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  &Logo {
+    &Img {
+      width: 214px;
+      height: 85px;
+    }
+    &Text {
+      margin-top: 28px;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #64646a;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-max-screen) {
+  .layout {
+    padding: 24px 0px;
+  }
+  .mainTitle {
+    font-size: 16px;
+    line-height: 17px;
+  }
+  .foodCards {
+    margin-top: 25px;
+    padding: 0 52px;
+    row-gap: 22px;
+  }
+
+  .foodCard {
+    width: 96px;
+    height: 132px;
+    border-radius: 6px;
+    &Layout {
+      padding: 10px 10px;
+    }
+
+    &Title {
+      font-size: 9px;
+      line-height: 13px;
+    }
+    &Desc {
+      margin: 2px 0 0 0;
+      font-size: 6px;
+      line-height: 9px;
+    }
+    &Content {
+      img {
+        top: 45%;
+        width: 37px;
+        height: 37px;
+      }
+      button {
+        bottom: 10px;
+        width: 42px;
+        height: 15px;
+      }
+    }
+  }
+
+  .orderFood {
+    margin-top: 0px;
+    &Description {
+      margin-top: 24px;
+      p {
+        font-size: 16px;
+        line-height: 17px;
+      }
+      button {
+        margin-top: 15px;
+        width: 42px;
+        height: 18px;
+      }
+    }
+  }
+
+  .ourCoffe {
+    margin-top: 10px;
+    &Title {
+      font-size: 17px;
+      line-height: 17px;
+    }
+    &Cards {
+      margin-top: 28px;
+      padding: 0 47px;
+      row-gap: 39px;
+    }
+  }
+
+  .coffeCard {
+    width: 96px;
+    height: 115px;
+    &Image {
+      width: 46px;
+      height: 76px;
+      top: -19px;
+    }
+    &Description {
+      &Wrapper {
+        width: 52%;
+      }
+      &Title {
+        margin-top: 2px;
+        font-size: 10px;
+        line-height: 11px;
+      }
+      &Meta {
+        margin-top: 10px;
+        font-size: 5px;
+        line-height: 7px;
+      }
+    }
+    &OrderPanel {
+      margin-top: 51px;
+      width: 76px;
+      &Cost {
+        font-size: 7px;
+        line-height: 7px;
+        &:after {
+          content: "\20BD";
+        }
+      }
+      button {
+        width: 37px;
+        height: 15px;
+      }
+    }
+  }
+
+  .downloadApp {
+    margin-top: 14px;
+    width: 125px;
+    padding: 0 24px;
+    &Title {
+      font-size: 16px;
+      line-height: 17px;
+    }
+    button {
+      margin-top: 15px;
+      width: 88px;
+      height: 18px;
+    }
+  }
+
+  .footer {
+    padding: 0 24px;
+  }
+  .footerLogo {
+    &Img {
+      width: 75px;
+      height: 30px;
+    }
+    &Text {
+      margin-top: 10px;
+      font-size: 7px;
+      line-height: 10px;
+    }
+  }
+}

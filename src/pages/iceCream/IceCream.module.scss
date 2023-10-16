@@ -1,0 +1,82 @@
+@import "src/styles/variables";
+
+.iceCreamCard {
+  width: 231px;
+  height: 423px;
+  background: linear-gradient(
+    142.42deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0px 14px 42px 0px #a3a8b226;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 42px;
+
+  img {
+    width: 194px;
+    height: 263px;
+  }
+
+  &Title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 49px;
+  }
+
+  &OrderPanel {
+    margin-top: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      //cost
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 20px;
+      &:after {
+        content: "\20BD";
+      }
+    }
+    button {
+      width: 105px;
+      height: 42px;
+    }
+  }
+}
+// Mobile
+@media screen and (max-width: $mobile-max-screen) {
+  .iceCreamCard {
+    width: 137px;
+    height: 211px;
+    border-radius: 8px;
+    padding: 0 7px;
+
+    img {
+      width: 97px;
+      height: 132px;
+    }
+
+    &Title {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &OrderPanel {
+      margin-top: 6px;
+      span {
+        //cost
+        font-size: 10px;
+        line-height: 10px;
+      }
+      button {
+        width: 53px;
+        height: 21px;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "src/styles/variables";
+
+.contacts {
+  &Title {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 35px;
+  }
+  &Mail {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31px;
+    color: #64646a;
+    img {
+      margin-right: 17px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-max-screen) {
+  .contacts {
+    &Title {
+      font-size: 10px;
+      line-height: 12px;
+    }
+    &Mail {
+      height: 18px;
+      font-size: 7px;
+      line-height: 11px;
+      margin-top: 7px;
+      img {
+        margin-right: 9px;
+        width: 7px;
+        height: 8px;
+      }
+    }
+  }
+}

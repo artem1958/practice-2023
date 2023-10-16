@@ -1,0 +1,103 @@
+@import "src/styles/variables";
+
+$top-offset: 160px;
+$card-height: 350px;
+
+.foodCard {
+  position: relative;
+  width: 231px;
+  height: $card-height;
+  border-radius: 16px;
+  background: linear-gradient(
+    142.42deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0px 14px 42px 0px #a3a8b226;
+  padding: 0 47px;
+
+  &Img {
+    position: absolute;
+    bottom: $card-height - $top-offset;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 192px;
+    height: 145px;
+  }
+  &Title {
+    margin: 0;
+    margin-top: $top-offset;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 49px;
+    text-align: center;
+  }
+  &Description {
+    margin: 0;
+    margin-top: 10px;
+    font-family: Jost;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #64646a;
+  }
+  &OrderPanel {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      //cost
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 20px;
+      &:after {
+        content: "\20BD";
+      }
+    }
+    button {
+      width: 105px;
+      height: 42px;
+    }
+  }
+}
+
+// Mobile
+$mobile-card-height: 181px;
+$mobile-top-offset: 76px;
+@media screen and (max-width: $mobile-max-screen) {
+  .foodCard {
+    width: 129px;
+    height: $mobile-card-height;
+    border-radius: 9px;
+    padding: 0 11px;
+
+    &Img {
+      bottom: $mobile-card-height - $mobile-top-offset;
+      width: 84px;
+      height: 65px;
+    }
+    &Title {
+      margin-top: $mobile-top-offset;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    &Description {
+      margin-top: 3px;
+      font-size: 9px;
+      line-height: 13px;
+    }
+    &OrderPanel {
+      margin-top: 13px;
+      span {
+        //cost
+        font-size: 11px;
+        line-height: 11px;
+      }
+      button {
+        width: 58px;
+        height: 23px;
+      }
+    }
+  }
+}

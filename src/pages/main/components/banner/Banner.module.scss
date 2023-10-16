@@ -1,0 +1,82 @@
+@import "src/styles/variables";
+
+.logo {
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  height: 732.2px;
+}
+
+.content {
+  position: relative;
+  margin: 91px 16px 92px 56px;
+  .titleWrapper {
+    position: relative;
+    z-index: 1;
+    padding-top: 22px;
+    width: 55%;
+    .text {
+      font-size: 87px;
+      font-weight: 1000;
+      margin: 0;
+      line-height: 98px;
+    }
+    button {
+      margin-top: 42px;
+      width: 206px;
+      height: 49px;
+    }
+  }
+  .cup {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 490px;
+    height: 498.4px;
+  }
+  .premLogo {
+    position: absolute;
+    z-index: 0;
+    top: 232px;
+    left: 31%;
+  }
+}
+
+// Mobile
+@media screen and (max-width: $mobile-max-screen) {
+  .banner {
+    height: 256px;
+  }
+  .logo {
+    img {
+      width: 31px;
+      height: 12px;
+    }
+  }
+
+  .content {
+    margin: 31px 16px 32px 13px;
+    .titleWrapper {
+      .text {
+        font-size: 30px;
+        line-height: 34px;
+      }
+      button {
+        margin-top: 15px;
+        width: 73px;
+        height: 18px;
+      }
+    }
+    .cup {
+      width: 171px;
+      height: 174px;
+    }
+    .premLogo {
+      display: none;
+    }
+  }
+}

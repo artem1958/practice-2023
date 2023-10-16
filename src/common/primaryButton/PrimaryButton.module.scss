@@ -1,0 +1,20 @@
+@import "src/styles/variables";
+
+.button {
+  background-color: #1b1b1d;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 88px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+// Mobile
+@media screen and (max-width: $mobile-max-screen) {
+  .button {
+    border-radius: 24px;
+    font-size: 4px;
+    line-height: 7px;
+  }
+}

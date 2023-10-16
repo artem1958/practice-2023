@@ -1,0 +1,75 @@
+@import "src/styles/variables";
+
+$nav-font-weight: 500;
+
+.burger {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.appHeader {
+  height: $app-header-height;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 1px;
+  font-size: 20px;
+
+}
+
+.navLink {
+  color: $app-font-color;
+  text-decoration: none;
+  font-weight: $nav-font-weight;
+  
+}
+
+.active {
+  color: rgb(156, 36, 255);
+  font-weight: $nav-font-weight;
+  text-decoration: none;
+}
+
+// Mobile
+@media screen and (max-width: $mobile-max-screen) {
+  .appHeader {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 37px;
+    z-index: 1000;
+  }
+
+  .mobileMenu {
+    width: 100%;
+    display: flex;
+    row-gap: 14px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #ffffff;
+    padding: 22px 0 34px 0;
+    &Title {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36px;
+    }
+    a {
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+}

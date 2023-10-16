@@ -1,0 +1,64 @@
+@import "src/styles/variables";
+
+.performance {
+  height: 732px;
+  background-color: #eeeff1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &Title {
+    width: 70%;
+    margin: 0;
+    margin-top: 81px;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 49px;
+    text-align: center;
+  }
+  &Description {
+    margin: 0;
+    margin-top: 17px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #64646a;
+  }
+  button {
+    width: 119px;
+    height: 49px;
+    margin-top: 17px;
+  }
+  img {
+    width: 464.9px;
+    height: 402.69px;
+    margin-top: 45px;
+  }
+}
+
+// Mobile
+@media screen and (max-width: $mobile-max-screen) {
+  .performance {
+    height: 366px;
+    &Title {
+      width: 90%;
+      margin-top: 17px;
+      font-size: 22px;
+      line-height: 24px;
+    }
+    &Description {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 40px;
+    }
+    button {
+      width: 60px;
+      height: 25px;
+      margin-top: 15px;
+    }
+    img {
+      width: 198px;
+      height: 141px;
+      margin-top: 15px;
+    }
+  }
+}

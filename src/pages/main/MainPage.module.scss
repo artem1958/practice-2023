@@ -1,0 +1,12 @@
+@import "src/styles/variables";
+
+.mainPage {
+  background-color: #eeeff1;
+}
+
+// Mobile
+@media screen and (max-width: $mobile-max-screen) {
+  .mainPage {
+    margin: 0 38px;
+  }
+}

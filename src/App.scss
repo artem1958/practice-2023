@@ -1,0 +1,21 @@
+@import "src/styles/variables";
+
+.App {
+  position: relative;
+}
+
+.app-layout {
+  padding: 74px 216px;
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+}
+
+// Mobile
+@media screen and (max-width: $mobile-max-screen) {
+  .app-layout {
+    padding: 55px 0;
+  }
+}

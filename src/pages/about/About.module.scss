@@ -1,0 +1,157 @@
+@import "src/styles/variables";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 197px;
+    height: 143px;
+    background-color: #eeeff1;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 49px;
+  }
+  &Description {
+    margin: 0;
+    margin-top: 17px;
+    width: 500px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #64646a;
+    white-space: pre-wrap;
+  }
+  &Mail {
+    height: 59px;
+    display: flex;
+    align-items: center;
+    margin-top: 43px;
+    margin-bottom: 30px;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 43px;
+    color: #64646a;
+    img {
+      margin-right: 24px;
+    }
+  }
+}
+
+.Map {
+  width: 597px;
+  height: 377px;
+}
+
+.footer {
+  margin-top: 35px;
+  width: 597px;
+  position: relative;
+  &Premium {
+    position: absolute;
+    top: 0;
+    left: 75%;
+  }
+}
+
+.companyLogo {
+  position: absolute;
+  left: 73px;
+  bottom: 83px;
+}
+
+.cupGroup {
+  position: absolute;
+  right: 21px;
+  bottom: 24px;
+}
+
+.cup {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cupBlur {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.premiumLogo {
+  display: none;
+}
+
+.mobileFooter {
+  display: none;
+}
+
+// Mobile
+@media screen and (max-width: $mobile-max-screen) {
+  .about {
+    &Title {
+      width: 98px;
+      height: 72px;
+      font-size: 22px;
+      line-height: 24px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    &Description {
+      z-index: 1;
+      margin-top: 55px;
+      width: 100%;
+    }
+    &Mail {
+      display: none;
+    }
+  }
+  .map {
+    width: 403px;
+    height: 299px;
+  }
+  .footer {
+    display: none;
+  }
+  .cup {
+    z-index: 0;
+    top: 30%;
+    transform: translate(-37%, 0);
+  }
+  .cupBlur {
+    top: 10%;
+    transform: translate(20%, 0);
+  }
+  .cupGroup {
+    display: none;
+  }
+  .companyLogo {
+    display: none;
+  }
+  .premiumLogo {
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 16px;
+  }
+  .mobileFooter {
+    img {
+      width: 27px;
+      height: 27px;
+    }
+    margin-top: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 39px;
+    font-size: 20px;
+    line-height: 43px;
+  }
+}
