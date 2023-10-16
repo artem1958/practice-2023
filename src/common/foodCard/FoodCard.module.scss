@@ -107,6 +107,7 @@ $mobile-top-offset: 76px;
     height: $mobile-card-height;
     border-radius: 9px;
     padding: 0 11px;
+    margin-top: 25px;
 
     &Img {
       bottom: $mobile-card-height - $mobile-top-offset;
@@ -115,7 +116,7 @@ $mobile-top-offset: 76px;
     }
     &Title {
       margin-top: $mobile-top-offset;
-      font-size: 18px;
+      font-size: 15px;
       line-height: 27px;
     }
     &Description {

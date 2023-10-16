@@ -40,9 +40,35 @@
   .performance {
     height: 366px;
     &Title {
-      width: 90%;
+      width: 80%;
       margin-top: 17px;
-      font-size: 22px;
+      font-size: 19px;
+      line-height: 24px;
+    }
+    &Description {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 40px;
+    }
+    button {
+      width: 60px;
+      height: 25px;
+      margin-top: 15px;
+    }
+    img {
+      width: 198px;
+      height: 141px;
+      margin-top: 15px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .performance {
+    height: 366px;
+    &Title {
+      width: 80%;
+      margin-top: 17px;
+      font-size: 17px;
       line-height: 24px;
     }
     &Description {
