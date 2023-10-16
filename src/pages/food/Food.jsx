@@ -34,7 +34,7 @@ export const Food = () => {
       <Menu centered title="ДОПОЛНИТЕЛЬНОЕ">
         <FoodCard title={"ЖВАЧКА"} cost={25} img={orbit} />
       </Menu>
-      <footer style={{marginRight: 10 }} className={"footer"}>
+      <footer style={{marginRight: 10, marginTop: -60 }} className={"footer"}>
         <Contacts />
       </footer>
     </section>

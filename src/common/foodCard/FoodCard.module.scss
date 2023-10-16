@@ -5,7 +5,7 @@ $card-height: 350px;
 
 .foodCard {
   position: relative;
-  width: 231px;
+  width: 201px;
   height: $card-height;
   border-radius: 16px;
   background: linear-gradient(
@@ -67,7 +67,7 @@ $mobile-card-height: 181px;
 $mobile-top-offset: 76px;
 @media screen and (max-width: $mobile-max-screen) {
   .foodCard {
-    width: 129px;
+    width: 109px;
     height: $mobile-card-height;
     border-radius: 9px;
     padding: 0 11px;
@@ -101,3 +101,40 @@ $mobile-top-offset: 76px;
     }
   }
 }
+@media screen and (max-width: 400px) {
+  .foodCard {
+    width: 99px;
+    height: $mobile-card-height;
+    border-radius: 9px;
+    padding: 0 11px;
+
+    &Img {
+      bottom: $mobile-card-height - $mobile-top-offset;
+      width: 84px;
+      height: 65px;
+    }
+    &Title {
+      margin-top: $mobile-top-offset;
+      font-size: 18px;
+      line-height: 27px;
+    }
+    &Description {
+      margin-top: 3px;
+      font-size: 9px;
+      line-height: 13px;
+    }
+    &OrderPanel {
+      margin-top: 13px;
+      span {
+        //cost
+        font-size: 11px;
+        line-height: 11px;
+      }
+      button {
+        width: 58px;
+        height: 23px;
+      }
+    }
+  }
+}
+
