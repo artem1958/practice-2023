@@ -1,7 +1,7 @@
 @import "src/styles/variables";
 
 .iceCreamCard {
-  width: 231px;
+  width: 201px;
   height: 423px;
   background: linear-gradient(
     142.42deg,
@@ -51,8 +51,41 @@
 // Mobile
 @media screen and (max-width: $mobile-max-screen) {
   .iceCreamCard {
-    width: 137px;
+    width: 117px;
     height: 211px;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 0 7px;
+
+    img {
+      width: 97px;
+      height: 132px;
+    }
+
+    &Title {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &OrderPanel {
+      margin-top: 6px;
+      span {
+        //cost
+        font-size: 10px;
+        line-height: 10px;
+      }
+      button {
+        width: 53px;
+        height: 21px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .iceCreamCard {
+    width: 107px;
+    height: 211px;
+    margin-top: 10px;
     border-radius: 8px;
     padding: 0 7px;
 
