@@ -43,11 +43,6 @@
   }
 }
 
-.Map {
-  width: 597px;
-  height: 377px;
-}
-
 .footer {
   margin-top: 35px;
   width: 597px;
@@ -122,7 +117,7 @@
   }
   .cup {
     z-index: 0;
-    top: 30%;
+    top: 48%;
     transform: translate(-37%, 0);
   }
   .cupBlur {
@@ -146,7 +141,7 @@
       width: 27px;
       height: 27px;
     }
-    margin-top: 84px;
+    margin-top: 44px;
     display: flex;
     justify-content: space-between;
     align-items: center;
