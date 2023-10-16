@@ -12,20 +12,20 @@
 
 .content {
   position: relative;
-  margin: 91px 16px 92px 56px;
+  margin: 91px 30px 92px 56px;
   .titleWrapper {
     position: relative;
     z-index: 1;
     padding-top: 22px;
     width: 55%;
     .text {
-      font-size: 87px;
+      font-size: 100px;
       font-weight: 1000;
       margin: 0;
       line-height: 98px;
     }
     button {
-      margin-top: 42px;
+      margin-top: 50px;
       width: 206px;
       height: 49px;
     }
@@ -59,11 +59,12 @@
   }
 
   .content {
-    margin: 31px 16px 32px 13px;
+    margin: 31px 13px 32px 17px;
     .titleWrapper {
       .text {
-        font-size: 30px;
-        line-height: 34px;
+        margin-top: -10px;
+        font-size: 24px;
+        line-height: 30px;
       }
       button {
         margin-top: 15px;
@@ -72,7 +73,41 @@
       }
     }
     .cup {
-      width: 171px;
+      width: 170px;
+      height: 174px;
+    }
+    .premLogo {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .banner {
+    height: 256px;
+  }
+  .logo {
+    img {
+      width: 31px;
+      height: 12px;
+    }
+  }
+
+  .content {
+    margin: 31px 0px 32px 17px;
+    .titleWrapper {
+      .text {
+        margin-top: -10px;
+        font-size: 24px;
+        line-height: 27px;
+      }
+      button {
+        margin-top: 15px;
+        width: 73px;
+        height: 18px;
+      }
+    }
+    .cup {
+      width: 170px;
       height: 174px;
     }
     .premLogo {
